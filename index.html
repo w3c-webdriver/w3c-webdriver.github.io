@@ -72,7 +72,7 @@ which specifies a remote control protocol for web browsers. No magic just pure p
         }
       }
     });
-    <span style="color:#cc99cc">await</span> session.go(<span style="color:#99cc99">&#x27;http://localhost:8080&#x27;</span>);
+    <span style="color:#cc99cc">await</span> session.navigateTo(<span style="color:#99cc99">&#x27;http://localhost:8080&#x27;</span>);
     <span style="color:#cc99cc">const</span> input = <span style="color:#cc99cc">await</span> session.findElement(<span style="color:#99cc99">&#x27;css selector&#x27;</span>, <span style="color:#99cc99">&#x27;[name=&quot;first-name&quot;]&#x27;</span>);
     <span style="color:#cc99cc">await</span> input.sendKeys(<span style="color:#99cc99">&#x27;Hello World&#x27;</span>);
   } <span style="color:#cc99cc">catch</span> (err) {
